@@ -1,0 +1,22 @@
+body {
+    background:#444444;
+    font-family: 'Marcellus SC', serif;
+}
+
+#imgDiv {
+    background-color: #B99D63;
+}
+
+img {
+    width: 20%;
+    height: auto;
+    margin: 15px;
+}
+
+input {
+    border: none;
+    border-bottom-style: solid;
+    border-color:lightgray;
+    border-width: 1.1px;
+    margin: 0px 10px;
+}

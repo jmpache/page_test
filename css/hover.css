@@ -1,0 +1,81 @@
+a {
+    -webkit-transition: color 0.55s; /* For Safari 3.0 to 6.0 */
+    transition: color 0.55s; /* For modern browsers */
+}
+
+li > a:hover {
+    color: #B99D63;
+}
+
+
+/*------------GALLERY BUTTON-------------*/
+
+.btn-6{
+    display: inline-block;
+    position: relative;
+    background: none;
+    border: none;
+    color: #333333;
+    font-size: 1.2em;
+    letter-spacing: 1.6px;
+    cursor: pointer;
+    background: white;
+  }
+  .gallerySpan{
+    display: block;
+    padding: 13px 23px;
+  }
+  .btn-6::before, .btn-6::after{
+    content:"";
+    width: 0;
+    height: 4px;
+    position: absolute;
+    transition: all 0.1s linear;
+    background: #fff;
+  }
+  
+  .gallerySpan::before, .gallerySpan::after{
+    content:"";
+    width:4px;
+    height:0;
+    position: absolute;
+    transition: all 0.1s linear;
+    background: #fff;
+  }
+  .btn-6:hover::before, .btn-6:hover::after{
+    width: 100%;
+  }
+  .btn-6:hover .gallerySpan::before, .btn-6:hover .gallerySpan::after{
+    height: 100%;
+  }
+
+.btn-6::before{
+    left: 50%;
+    top: 0;
+    transition-duration: 0.2s;
+  }
+  .btn-6::after{
+    left: 50%;
+    bottom: 0;
+    transition-duration: 0.2s;
+  }
+  .btn-6 .gallerySpan::before{
+    left: 0;
+    top: 50%;
+    transition-duration: 0.2s;
+  }
+  .btn-6 .gallerySpan::after{
+    right: 0;
+    top: 50%;
+    transition-duration: 0.2s;
+  }
+  .btn-6:hover::before, .btn-6:hover::after{
+    left: 0;
+  }
+  .btn-6:hover .gallerySpan::before, .btn-6:hover .gallerySpan::after{
+    top: 0;
+  }
+
+  .btn-6:hover {
+    background: #B99D63;
+  }

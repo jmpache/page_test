@@ -1,0 +1,59 @@
+body {
+    background-color:white;
+}
+
+footer {
+    background-color: #333333;
+    font-family: 'Raleway', sans-serif;
+    padding: 20px;
+    font-size: 0.90em;  
+}
+
+
+footer p {
+    color:#A1A1A1;
+  }
+
+.imgbox {
+    position: relative;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 25vw;
+    object-fit: cover;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .3s ease;
+}
+
+.imgbox:hover .overlay {
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.65);
+}
+
+.icon {
+    color: white;
+    font-size: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+  
+.fa-user:hover {
+    color: #eee;
+}
+  
+
